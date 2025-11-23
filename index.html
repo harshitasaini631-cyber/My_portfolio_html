@@ -1,109 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        
-    <header>
-        <h1>Harshita Saini</h1>
-        
-    
-    
-    <nav>
+
+  
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">My Portfolio</div>
+
+      <nav class="nav-links">
         <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contacts</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    </header>
-    
-    <main>
-    <section>
-        
-        <h1>Welcome to my portfolio</h1>
-        <p>Hello, I am a web developer student.This is my personal portfolio website</p>
-        <div>
-        <img src="https://www.shutterstock.com/image-vector/women-working-busy-company-600nw-278144654.jpg" alt="Portfolio profile of Harshita" width="20%" height="20%">
-        </div>
-
-        <h1>About me</h1>
-        <p>Greetings, my name is Harshita saini. I am pursuing Btech in computer science from KR Mangalam University. Currently, I am in my first year. I had previously worked on some projects of frontend and now learning to do backend.</p>
-    </section>
-    
-    <section>
-        <h1>My projects</h1>
-        <ul>
-            <li><b>My portfolio</b>:Made my portfolio page</li>
-            <li><b>Article</b>:Made article page of a research project.</li>
-            <li><b>Forms</b>:made a forms page with inputs like name,email,date/time, urls and message.</li>
-        </ul>
-    </section>
-
-    <section>
-        <h1>Technical skills</h1>
-        <table border="1" cellspacing="2" cellpadding="4">
-        <thead>
-            <tr>
-                <th>Skills</th>
-                <th>Level</th>
-            </tr> 
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>Java</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Intermediate</td>
-            </tr>
-        </tbody>
-        </table>
-
-    </section>
-    
-    <section>
-        <h1>Contact me</h1>
-        <form action="submit" method="post">
-
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your full name">
-            <br>
-            <br>
-
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
-            <br>
-            <br>
-
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
-            <br>
-            <br>
-
-            <button type="submit">Send mesage</button>
-
-        </form>
-    </section>
-
-     <footer>
-        <p>© <span id="year"></span>Harshita Saini  — Built with semantic HTML</p>
-      </footer>
-
-    </main>
+      </nav>
     </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-container">
+
+      
+      <div class="hero-text">
+        <h1>Hi, I am</h1>
+        <h2>Full Stack Developer</h2>
+        <p>Building modern web applications with HTML & CSS.</p>
+      </div>
+
+      
+      <div class="hero-image">
+        <img src="https://www.shutterstock.com/image-vector/women-working-busy-company-600nw-278144654.jpg" alt="Portfolio profile of Harshita">
+      </div>
+    </div>  
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+    <p>
+      Greetings, my name is Harshita saini. I am pursuing Btech in computer science from KR Mangalam University. Currently, I am in my first year. I had previously worked on some projects of frontend and now learning to do backend.
+    </p>
+  </section>
+
+  
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-card">
+        <h3>HTML</h3>
+        <p>Beginner</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>CSS</h3>
+        <p>Beginner</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Learning</p>
+      </div>
+
+
+    </div>
+  </section>
+
+      <section class="projects" id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>A simple HTML & CSS webpage.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Portfolio page</p>
+      </div>
+
+    </div>
+  </section>
+
+     
+ <section class="contact" id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-box">
+    <form>
+
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+
+      <div class="input-group">
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send</button>
+
+    </form>
+  </div>
+ </section>
+
+
+
+       
+  <footer class="footer">
+    <p>© Harshita saini - Built with semantic HTML</p>
+    
+  </footer>
+
+
+  
+  <a href="#top" class="back-to-top">↑ Back to top</a>
+
+
+
+
+
 </body>
 </html>
